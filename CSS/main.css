@@ -65,6 +65,7 @@ body{
 
 /*The "Max Lichter"*/
 .logo{
+    margin-top:200px;
     font-family: 'M PLUS Code Latin', sans-serif;
     font-size: 100px;
     font-weight: bold;
