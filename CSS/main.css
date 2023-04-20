@@ -125,6 +125,14 @@ body{
 
 
 
+/*When the screen gets to 1255 pixels, these changes occur*/
+
+@media only screen and (min-width: 1259px) {
+    .logo{
+        margin-top: 200px;
+    }
+}
+
 /*When the screen gets to 1215 pixels, these changes occur*/
 @media only screen and (max-width: 1215px) {
 
