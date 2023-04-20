@@ -60,7 +60,7 @@ body{
     font-size: 100px;
     font-weight: bold;
     color: #edf0f1; 
-    transform:translateY(300%);
+    transform:translateY(200%);
 }
 
 /*The "Max Lichter"*/
@@ -144,6 +144,7 @@ body{
         color: #edf0f1;
         text-decoration: none;
         text-align: center;
+        margin-bottom:150px;
         
     }
     .nav__links li{
@@ -151,10 +152,13 @@ body{
         padding: 30px;
         
     }
-
+    
 
 
     /*Changing all the words on the page to be smaller*/
+    .Welcome{
+        font-size:60px
+    }
     .logo{
         font-size:60px;
     
