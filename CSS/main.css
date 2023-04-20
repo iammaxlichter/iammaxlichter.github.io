@@ -55,11 +55,16 @@ body{
     color: #b4b5b9;
 }
 
-
+.Welcome{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: #edf0f1; 
+    transform:translateY(300%);
+}
 
 /*The "Max Lichter"*/
 .logo{
-    margin-top:200px;
     font-family: 'M PLUS Code Latin', sans-serif;
     font-size: 100px;
     font-weight: bold;
@@ -85,6 +90,36 @@ body{
     font-size: 18px;
     font-weight: bold;
     color: #edf0f1;
+}
+
+
+
+/*implementing the animations*/
+.WelcomeAnimation{
+    animation: slideAnimationCode 1s ease-in;
+    animation: IntroDisappear .8s ease-out 1s forwards;
+}
+.slideAnimation{
+    margin-top: -100px;
+    animation: slideAnimationCode 1.5s ease-in;
+}
+
+
+
+/*This animation slides in my other text (other than my Welcome text*/
+@keyframes slideAnimationCode{
+    0%{
+        transform: translateY(600%);
+    }
+}
+
+
+
+/*This animation makes the "Welcome to my website" text go away*/
+@keyframes IntroDisappear{
+    100%{
+        opacity: 0;
+    }
 }
 
 
