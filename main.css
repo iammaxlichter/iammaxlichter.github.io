@@ -93,6 +93,8 @@ body{
 }
 
 
+
+/*implementing the animations*/
 .WelcomeAnimation{
     animation: slideAnimationCode 1s ease-in;
     animation: IntroDisappear .8s ease-out 1s forwards;
@@ -102,23 +104,25 @@ body{
     animation: slideAnimationCode 1.5s ease-in;
 }
 
+
+
+/*This animation slides in my other text (other than my Welcome text*/
 @keyframes slideAnimationCode{
     0%{
         transform: translateY(600%);
     }
 }
 
-@keyframes IntroLoad{
-    100%{
-        opacity: 1;
-    }
-}
 
+
+/*This animation makes the "Welcome to my website" text go away*/
 @keyframes IntroDisappear{
     100%{
         opacity: 0;
     }
 }
+
+
 
 /*When the screen gets to 1215 pixels, these changes occur*/
 @media only screen and (max-width: 1215px) {
