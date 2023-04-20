@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap');/*The google font im using*/
+
+
+
+/*This modifies every element*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+/*This modifies every list element with an "a" reference*/
+li, a{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/*modifies the background color*/
+body{
+    background: #2a2a2a;
+    margin: 1.5em 5em; /*I don't really know what this does*/
+}
+
+
+
+/*This section is from "Max Lichter" all the way to the "Get in touch with me!*/
+header{
+    display: center;
+    padding: 30px 10%;
+    margin-top: -35px;
+}
+.logo{
+    cursor: pointer;
+    font-size: 55px;
+    padding-bottom: 100px;
+}
+.logo:hover{
+    color: #b4b5b9;
+}
+
+
+
+/*The top navigation*/
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 40px;
+}
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color: #b4b5b9;
+}
+
+
+
+/*"Get in Touch with me!*/
+.hero_title{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #edf0f1;
+    letter-spacing: 2.5px;
+    margin-bottom: 40px;
+    margin-top: 90px;
+}
+
+
+
+/*The picture onscreen bouncing*/
+.CSImage{
+    width: 500px; 
+    border: 1px solid #b4b5b9;
+    border-radius: 5px;
+    animation: moveCSImage 1s alternate-reverse infinite;
+    margin-bottom: 2em;
+}
+
+
+
+/*The describing text (about how to connect with me)*/
+.info{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: auto;
+    color: #edf0f1;
+    line-height: 1.2;
+    display:block;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+
+
+/*The bottom navigation (social media links)*/
+.social__links{
+    list-style: none;
+}
+.social__links li{
+    display: inline-block;
+    padding: 40px;
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-bottom: 150px;
+    width: 148px;
+}
+.social__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+
+
+/*This moves the image up and down*/
+@-webkit-keyframes moveCSImage {
+    from {
+        transform: translateY(-30px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveCSImage {
+    from {
+      transform: translateY(-30px);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+
+/*When the screen gets to 1225 pixels, these changes occur*/
+@media only screen and (max-width: 1225px) {
+
+    /*Changing the nav to be smaller*/
+    li, a{
+        font-family: 'M PLUS Code Latin', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #edf0f1;
+        text-decoration: none;
+        text-align: center;
+    }
+    .nav__links li{
+        margin-top: 20px;
+        display: inline-block;
+        padding: 20px;
+    }
+
+}

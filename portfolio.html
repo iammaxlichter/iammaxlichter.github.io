@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title> <!--title of the page-->
+        <link rel="stylesheet" href="ExperienceCSS/portfolio.css"> <!--the style sheet connected-->
+    </head>
+
+    <body>
+        
+        <!--"Home" and "Projects" buttons on the top left-->
+        <div class = home-container>
+            <a href ="index.html" class="home">Home</a>
+        </div>
+            <a href ="projects.html" class="projects">Projects</a>
+    
+        <!--Title text of the page-->
+        <header><a class="logo">Porfolio<span> Website</span></a></header>
+
+        <!--The whole slide-show-->
+        <ul class = slidesSummary>
+            <li><div class = "containerSlides">
+                <div class ="slides">
+
+                    <!--I don't really know what this does, but assuming this allows you to switch btwn pictures as well-->
+                    <input type = "radio" name = "common" id="btn1" checked>
+                    <input type = "radio" name = "common" id="btn2">
+                    <input type = "radio" name = "common" id="btn3">
+            
+                    <!--each image inside the slide-show-->
+                    <div class = "image first">
+                        <img src = "Pictures/portfolio/portfolio0.jpg">
+                    </div>
+                    <div class = "image">
+                        <img src = "Pictures/portfolio/portfolio1.jpg">
+                    </div>
+                    <div class = "image">
+                        <img src = "Pictures/portfolio/portfolio2.png">
+                    </div>
+                </div>
+
+                 <!--The navigator at the bottom of the slide-show that navigates you between pictures-->
+                <div class = "navigator">
+                    <label for="btn1" class="bar"></label>
+                    <label for="btn2" class="bar"></label>
+                    <label for="btn3" class="bar"></label>
+                </div>
+            </div></li>
+
+             <!--This giant section is the full description of what my portfolio website is-->
+            <li><p class = "summary">I started this project in the Summer of 2022.
+                I was at a standpoint at my love for Computer Science and school had just let out. With me
+                being bored and interviewing for a Summer job in my hometown, I decided I need a website to
+                keep track of all of my professional achievements / acolades and thus, this website was born.
+                
+                <br><br>
+                
+                By absolutely no means is this project nearly where I want to be in terms of development, but
+                by creating this webpage, I dramatically increased my knowledge in HTML, CSS, and Javascript. Re-learning 
+                these languages I used 4+ years ago in highschool was incredibly fun. Even though this project is always a work in
+                progress, I'm super happy with the outcome. I'll constantly be updating & changing things on this webpage, & 
+                on the left is pictures concerning the process of creating this project.
+                
+                <br><br><br> <!--every "<br> is a line break (creates a new line)"-->
+                
+                Below is a link to this projects GitHub repository along with my email. Contact me concerning questions
+                about this project and or advice to improve it!
+
+            </p></li>
+
+        </ul>
+
+        <!--The GitHub and Email links-->
+        <ul class = social__links>
+            <li><a href="https://github.com/iammaxlichter/Portfolio-Website"><img src="Pictures/connect/github.svg" alt="github icon" /></a></li>
+            <li><a href="mailto:iammaxlichter@gmail.com"><img src="Pictures/connect/gmail.svg" alt="gmail icon" /></a></li>
+        </ul>
+
+        <!--Back button-->
+        <a href="projects.html">
+            <div class = "containerBackward"> 
+               <p class = "backButtonText"><----</p>
+            </div>
+        </a>
+
+        <!--Forward button-->
+        <a href="gymThis.html">
+        <div class = "containerForward">
+            <p class = "forwardButtonText">GymThis</p>
+        </div>
+        </a>
+
+    </body>

@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap');/*The google font im using*/
+
+/*So the page doesn't repeat the background*/
+html {
+    min-height: 100%
+}
+
+
+
+/*This modifies every element*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+
+
+/*This modifies every list element with an "a" reference*/
+li, a{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*modifies the background color*/
+body{
+    background: #2a2a2a;
+    margin: 1.5em 5em;  /*I don't know what this does*/
+}
+    
+
+/*The home and projects buttons @ top left*/
+.home{
+    position:absolute;
+    display:flex;
+    margin-top:10px;
+    font-size:22px;
+    margin-left: 23px;
+}
+.home-container{
+    position:absolute;
+    display:flex;
+    background-color: #b33434;
+    border: 1px solid #c7c7c7;  
+    border-radius: 15px;
+    margin-left: -40px;
+    width:90px;
+    height:50px;
+    transform:translateY(25%);
+}
+.projects{
+    position:absolute;
+    display:flex;
+    margin-top:24px;
+    margin-left:90px;
+    color: white;
+    font-size:22px;
+}
+
+
+.home-container:hover{
+    background-color: #851b0d;
+}
+.home:hover{
+    color: #c7c7c7;
+}
+.projects:hover{
+    color: #c7c7c7;
+}
+
+
+
+/*This section is from the logo (MyMuse)*/
+header{
+    
+    display: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    text-decoration-color: #edf0f1;
+    text-decoration-thickness: 4px;
+
+}
+.logo{
+    font-size: 60px;
+}
+
+
+
+
+
+
+
+
+/*This is the first row of content*/
+.topSection{
+    list-style: none;
+    display:inline-block;
+}
+
+.topSection li a{
+    transition: all 0.3s ease 0s;
+    
+}
+
+
+
+/*The slide show*/
+.slide-show{
+    width: 532px;
+    height: 380px;
+    background-size:100% 100%;
+    display: inline-block;
+    animation: slider 9s infinite;
+    transform:translateY(30%);
+    border: 1px solid rgb(68, 68, 68);
+    box-shadow: 1px 1px 7px 7px #b33434;
+    margin-right: 20px;
+}
+@keyframes slider{ /*These are the images in the slideshow*/
+    0%{ background-image: url('https://images.pexels.com/photos/15642377/pexels-photo-15642377.png?auto=compress&cs=tinysrgb&w=400&lazy=load')}
+    35%{ background-image: url('https://images.pexels.com/photos/15642378/pexels-photo-15642378.png?auto=compress&cs=tinysrgb&w=400&lazy=load')}
+    75%{ background-image: url('https://images.pexels.com/photos/15642376/pexels-photo-15642376.png?auto=compress&cs=tinysrgb&w=400&lazy=load')}
+    100%{background-image: url('https://images.pexels.com/photos/15642377/pexels-photo-15642377.png?auto=compress&cs=tinysrgb&w=400&lazy=load')} 
+}
+
+
+
+/*This is p1 of the describing text*/
+.describingTextTop{
+    -webkit-animation: introLoad 10s forwards;
+    animation: introLoad 10s forwards;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 550px;
+    height: 520px;
+    color: #edf0f1;
+    line-height: 1.2;
+    margin-top: 100px;
+    transform:translateY(30%);
+    margin-right: 30px;
+}
+
+
+
+/*describes teammates hyperlink*/
+.teammates{
+    text-decoration: underline;
+    color:#b33434;
+    font-size: 22px;
+}
+.teammates:hover{
+    color: #c7c7c7;
+}
+
+
+
+
+
+
+
+
+/*This is the second row of content*/
+.bottomSection{
+    list-style: none;
+    display:inline-block;
+}
+.bottomSection li a{
+    transition: all 0.3s ease 0s;
+}
+
+
+
+/*This is p2 of the describing text */
+.describingTextMiddle{
+    -webkit-animation: introLoad 3s forwards;
+    animation: introLoad 3s forwards;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 550px;
+    height: 500px;
+    color: #edf0f1;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-bottom:80px;
+    margin-left: 20px;
+}
+
+
+/*The presentations youtube video*/
+.YouTubeVideo{
+    transform:translateY(30%);
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+
+/*The caption under the YT video*/
+.caption{
+    display:inline-block;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 14px;
+    width: 510px;
+    height: 50px;
+    color: #edf0f1;
+    line-height: 1.2;
+    text-align: center;
+    transform:translate(4%,190%)
+}
+
+
+
+
+
+
+
+
+/*This is p3 of the describing text*/
+.describingTextBottom{
+    -webkit-animation: introLoad 20s forwards;
+    animation: introLoad 20s forwards;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 1000px;
+    height: 500px;
+    color: #edf0f1;
+    line-height: 1.2;
+    margin-top: 20px;
+    text-align:center;
+    display: inline-block;
+    transform:translateY(40%);
+}
+
+
+
+
+
+
+
+
+/*This is the social links*/
+.social__links{
+    list-style: none;
+}
+.social__links li{
+    display: inline-block;
+    padding: 50px;
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-bottom: 10px;
+    width: 148px;
+}
+.social__links li a{
+    transition: all 0.3s ease 0s;
+    
+}
+
+
+
+
+/*Back button*/
+.containerBackward{
+    display: inline-block;
+    width:120px;
+    height:50px;
+    background-color: #b33434;
+    border: 1px solid #edf0f1;
+    border-radius: 15px;
+}
+.containerBackward:hover{
+    background-color: #851b0d;
+}
+.backButtonText{
+    display: inline-block;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    margin-top:10px;
+
+}
+.backButtonText:hover{
+    color: #c7c7c7;
+}
+
+
+
+/*Forward button*/
+.containerForward{
+    display: inline-block;
+    width:120px;
+    height:50px;
+    background-color: #b33434;
+    margin-left:800px;
+    border-radius: 15px;
+    border: 1px solid #edf0f1;
+}
+.containerForward:hover{
+    border: 1px solid #c7c7c7;
+    background-color: #851b0d;
+}
+.forwardButtonText{
+    display: inline-block;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 18px;
+    color: #edf0f1;
+    margin-top:10px;
+   
+}
+.forwardButtonText:hover{
+    color: #c7c7c7;
+}
+
+
+
+/*creates space for "more page"*/
+.container{
+    margin-bottom: 30px;
+}
+
+
+
+/*The loading animation for the describing text*/
+@-webkit-keyframes introLoad {
+    from {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/*The loading animation for the describing text*/
+@keyframes introLoad {
+    from {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
+
+/*This happens when screen pixels get to 1357px*/
+  @media only screen and (max-width: 1357px) {
+
+    /*Changing the home and connect buttons to be smaller and to move right*/
+    .home{
+        font-size:19px;
+    }
+    .projects{
+        font-size:19px;
+    }
+    .describingTextTop{
+        transform:translateY(100%);
+        width:800px;
+    }
+    .describingTextMiddle{
+        transform:translateY(-100%);
+        width:800px;
+    }
+
+    /*Making the width of textbox(s) smaller (along w/ some other changes)*/
+
+
+    .describingTextBottom{
+        transform:translateY(0%);
+        width:800px;
+        margin-bottom: -120px;
+        margin-top: -150px;
+    }
+    
+
+
+    /*Changing where these elements are at on the page*/
+    .YouTubeVideo{
+        transform:translate(-3%,-80%);
+    }
+    .caption{
+        transform:translateY(-500%);
+    }
+    .social__links{
+        margin-top: -60px;
+    }
+    .containerForward{
+        margin-left: 300px;
+    }
+}
+
+
+
+/*This happens when screen pixels gets to MINIMUM 2200px*/
+@media only screen and (min-width: 2350px) {
+
+    /*Basically just moving everything right. That and or making everything fit the next pages dimensions better*/
+    .describingTextMiddle{
+        transform:translateX(100%)
+    }
+    .slide-show{
+        transform:translate(100%,30%)
+    }
+    .describingTextTop{
+        transform:translate(100%,30%)
+    }
+    .YouTubeVideo{
+        transform:translate(100%,30%)
+    }
+    .caption{
+        transform:translate(112%,200%)
+    }
+    .describingTextBottom{
+        transform:translate(-60%,100%)
+    }
+    .social__links{
+        margin-top:300px;
+    }
+}

@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap'); /*The google font im using*/
+
+/*So the page doesn't repeat the background*/
+html {
+    min-height: 100%
+}
+
+
+
+/*This modifies every element*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+
+
+/*This modifies every list element with an "a" reference*/
+li, a{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/*modifies the background color*/
+body{
+    background: #2a2a2a;
+    margin: 1.5em 5em;  /*I don't know what this does*/
+}
+    
+
+/*The home and projects buttons @ top left*/
+.home{
+    position:absolute;
+    display:flex;
+    margin-top:10px;
+    font-size:22px;
+    margin-left: 23px;
+}
+.home-container{
+    position:absolute;
+    display:flex;
+    background-color: #b33434;
+    border: 1px solid #c7c7c7;  
+    border-radius: 15px;
+    margin-left: -20px;
+    width:90px;
+    height:50px;
+    transform:translateY(25%);
+}
+.projects{
+    position:absolute;
+    display:flex;
+    margin-top:24px;
+    margin-left:110px;
+    color: white;
+    font-size:22px;
+}
+
+
+.home-container:hover{
+    background-color: #851b0d;
+}
+.home:hover{
+    color: #c7c7c7;
+}
+.projects:hover{
+    color: #c7c7c7;
+}
+
+
+
+/*This section is from the logo (Portfolio Website)*/
+header{
+    
+    display: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    text-decoration-color: #edf0f1;
+    text-decoration-thickness: 4px;
+
+}
+.logo{
+    font-size: 60px;
+}
+
+
+
+
+/*SLIDE SHOW and describing text*/
+.slidesSummary{
+    list-style: none;
+}
+.slidesSummary li{
+    display: inline-block;
+    padding: 38.4791px;
+}
+.slidesSummary li a{
+    transition: all 0.3s ease 0s;
+}
+.slidesSummary li a:hover{
+    color: #b4b5b9;
+}
+
+
+
+/*slides*/
+.containerSlides{
+    display: inline-block;
+    height: 484px;
+    width:534px;
+    background: rgb(124, 103, 103);
+    border: 1px solid #fff;
+    overflow: hidden;
+    transform:translateY(-15%); 
+}
+.navigator{
+    position:absolute;
+    display: flex;
+    transform:translate(79%, -140%);
+}
+.navigator .bar{
+    display: inline-block;
+    height: 9px;
+    width: 30px;
+    background: #b33434;
+    cursor: pointer;
+    border: 1px solid #000;
+    margin-left: 5px;
+    transform:translateX(410%);
+}
+.navigator .bar:hover{
+    background: #c7c7c7;
+}
+input[type="radio"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    display: flex;
+    height: 100%;
+    width: 500%;
+}
+.image{
+    width: 20%;
+    transition: .2s ease;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#btn1:checked ~ .first{
+    margin-left: 0;
+}
+#btn2:checked ~ .first{
+    margin-left: -20%;
+}
+#btn3:checked ~ .first{
+    margin-left: -40%;
+}
+
+
+/*This is the describing text to the right of the slides*/
+.summary{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+    margin-top:30px;
+    width:490px;
+
+}
+
+
+
+/*This is the social links*/
+.social__links{
+    list-style: none;
+}
+.social__links li{
+    display: inline-block;
+    padding: 45px;
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-bottom: 10px;
+    margin-top:-50px;
+    width: 148px;
+}
+.social__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+
+
+/*Back button*/
+.containerBackward{
+    display: inline-block;
+    width:120px;
+    height:50px;
+    background-color: #b33434;
+    border: 1px solid #edf0f1;
+    border-radius: 15px;
+}
+.containerBackward:hover{
+    background-color: #851b0d;
+}
+.backButtonText{
+    display: inline-block;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    margin-top:10px;
+
+}
+.backButtonText:hover{
+    color: #c7c7c7;
+}
+
+
+
+/*Forward button*/
+.containerForward{
+    display: inline-block;
+    width:120px;
+    height:50px;
+    background-color: #b33434;
+    margin-left:800px;
+    border-radius: 15px;
+    border: 1px solid #edf0f1;
+}
+.containerForward:hover{
+    border: 1px solid #c7c7c7;
+    background-color: #851b0d;
+}
+.forwardButtonText{
+    display: inline-block;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 18px;
+    color: #edf0f1;
+    margin-top:10px;
+   
+}
+.forwardButtonText:hover{
+    color: #c7c7c7;
+}
+
+
+@media only screen and (max-width: 939px) {
+
+    .containerBackward{
+        transform:translateX(-230%);
+    }
+    .containerForward{
+        transform:translate(10%, -97%);
+    }
+}
+
+/*This happens when screen pixels get to 1360px*/
+@media only screen and (max-width: 1360px) {
+
+    /*Changing where these elements are at on the page / adapting the page to small dimensions*/
+    .slidesSummary{
+        transform:translateY(8%);
+    }
+    .summary{
+        transform:translateY(-30%);
+        margin-top:80px;
+    }
+
+    .connect{
+        transform:translateX(-90%);
+        font-size:19px;
+    }
+    .containerForward{
+
+        margin-left: 500px;
+    }
+}
+
+
+ 

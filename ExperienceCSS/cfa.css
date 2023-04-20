@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap'); /*The google font im using*/
+
+/*So the page doesn't repeat the background*/
+html {
+    min-height: 100%
+}
+
+
+
+/*This modifies every element*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+
+
+/*This modifies every list element with an "a" reference*/
+li, a{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/*modifies the background color*/
+body{
+    background: #2a2a2a;
+    margin: 1.5em 5em;  /*I don't know what this does*/
+    overflow-x: hidden;
+}
+    
+
+
+/*The home and projects buttons @ top left*/
+.home{
+    position:absolute;
+    display:flex;
+    margin-top:10px;
+    font-size:22px;
+    margin-left: 23px;
+}
+.home-container{
+    position:absolute;
+    display:flex;
+    background-color: #b33434;
+    border: 1px solid #c7c7c7;  
+    border-radius: 15px;
+    margin-left: -40px;
+    width:90px;
+    height:50px;
+    transform:translateY(25%);
+}
+
+.projects{
+    position:absolute;
+    display:flex;
+    margin-top:13px;
+    margin-left:50px;
+    font-size:22px;
+}
+
+.home-container:hover{
+    background-color: #851b0d;
+}
+.home:hover{
+    color: #c7c7c7;
+}
+.projects:hover{
+    color: #c7c7c7;
+}
+
+
+
+
+
+/*This section is from the logo (Chick-Fil-A)*/
+header{
+    display: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    text-decoration-color: #edf0f1;
+    text-decoration-thickness: 4px;
+
+}
+.logo{
+    font-size: 60px;
+}
+
+
+
+
+/*This is the summary*/
+.summary-container{
+    width:auto;
+    height:auto;
+    border: 3px solid #edf0f1;
+    margin-left: -90px;
+    margin-right: -90px;
+}
+.summary-text{
+    padding: 30px;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    color: white;
+    font-size: 21px;
+}
+
+
+
+/*This is the pictures*/
+.pictures-container{
+    width:206px;
+    height:362px;
+    border: 3px solid #B4B3B3;
+}
+.pictures{
+    width:200px;
+}
+
+
+
+/*Top pictures*/
+.pictures-top{
+    list-style: none;
+    margin-right: -50px;
+    margin-left: -50px;
+    margin-bottom: 70px;
+    margin-top: 80px;
+}
+.pictures-top li{
+    display:inline-block;
+    padding: 10px;
+}
+
+
+
+/*Bottom pictures*/
+.pictures-bottom{
+    margin-right: -50px;
+    margin-left: -50px;
+    list-style: none;
+    margin-top: 70px;
+    margin-bottom: 100px
+}
+.pictures-bottom li{
+    display:inline-block;
+    padding: 10px;
+}
+
+
+
+
+/*Back button*/
+.containerBackward{
+    display: inline-block;
+    width:120px;
+    height:50px;
+    background-color: #b33434;
+    transform: translateX(-330%);
+    border: 1px solid #edf0f1;
+    border-radius: 15px;
+}
+.containerBackward:hover{
+    background-color: #851b0d;
+}
+.backButtonText{
+    display: inline-block;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    margin-top: 12px;
+}
+.backButtonText:hover{
+    color: #c7c7c7;
+}
+
+
+
+/*Forward button*/
+.containerForward{
+    display: inline-block;
+    width:120px;
+    height:50px;
+    background-color: #b33434;
+    transform: translateX(330%);
+    border-radius: 15px;
+    border: 1px solid #edf0f1;
+    margin-bottom:80px;
+}
+.containerForward:hover{
+    border: 1px solid #c7c7c7;
+    background-color: #851b0d;
+}
+.forwardButtonText{
+    display: inline-block;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 18px;
+    color: #edf0f1;
+    margin-top:10px;
+   
+}
+.forwardButtonText:hover{
+    color: #c7c7c7;
+}
+
+
+/*This happens when screen pixels gets to MINIMUM 1460px*/
+@media only screen and (max-width: 1460px) {
+
+
+    .pictures-container{
+        width:156px;
+        height:272px;
+        border: 3px solid #B4B3B3;
+    }
+    .pictures{
+        width:150px;
+    }
+
+    .pictures-top{
+        margin-bottom:40px;
+    }
+    .pictures-bottom{
+        margin-top:40px;
+    }
+
+    .home{
+        font-size:19px;
+        transform:translateX(-10%);
+    }
+    .home-container{
+        width:80px;
+        margin-left: -40px;
+    }
+    .connect{
+        transform:translateX(-20%);
+        font-size:19px;
+    }
+    .projects{
+        font-size:19px;
+        transform:translateX(-20%);
+    }
+    
+    .logo{
+        font-size: 50px;
+    }
+
+}    
+
+/*Pixel query*/
+@media only screen and (min-width: 2000px) {
+    .pictures-container{
+        width:296px;
+        height:520px;
+        border: 3px solid #B4B3B3;
+    }
+    .pictures{
+        width:290px;
+    }
+
+    .pictures-top{
+        margin-bottom:40px;
+    }
+    .pictures-bottom{
+        margin-top:40px;
+    }
+    .summary-text{
+        font-size: 25px;
+    }
+    .containerForward{
+        transform:translateX(600%)
+    }
+    .containerBackward{
+        transform:translateX(-600%)
+    }
+}

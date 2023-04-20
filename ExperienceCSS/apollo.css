@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap'); /*The google font im using*/
+
+/*So the page doesn't repeat the background*/
+html {
+    min-height: 100%
+}
+
+
+
+/*This modifies every element*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+
+
+/*This modifies every list element with an "a" reference*/
+li, a{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/*modifies the background color*/
+body{
+    background: #2a2a2a;
+    margin: 1.5em 5em;  /*I don't know what this does*/
+}
+    
+
+/*The home and projects buttons @ top left*/
+.home{
+    position:absolute;
+    display:flex;
+    margin-top:10px;
+    font-size:22px;
+    margin-left: 23px;
+}
+.home-container{
+    position:absolute;
+    display:flex;
+    background-color: #b33434;
+    border: 1px solid #c7c7c7;  
+    border-radius: 15px;
+    margin-left: -40px;
+    width:90px;
+    height:50px;
+    transform:translateY(25%);
+}
+.projects{
+    position:absolute;
+    display:flex;
+    margin-top:24px;
+    margin-left:90px;
+    color: white;
+    font-size:22px;
+}
+
+
+.home-container:hover{
+    background-color: #851b0d;
+}
+.home:hover{
+    color: #c7c7c7;
+}
+.projects:hover{
+    color: #c7c7c7;
+}
+
+
+
+/*This section is from the logo (Apollo)*/
+header{
+    display: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    text-decoration-color: #edf0f1;
+    text-decoration-thickness: 4px;
+
+}
+.logo{
+    font-size: 60px;
+}
+
+
+
+
+
+
+/*This is the whole WHOLE paragraph describing Apollo/Hackathons*/
+.describingText{
+    -webkit-animation: introLoad 20s forwards;
+    animation: introLoad 20s forwards;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 1100px;
+    height: 500px;
+    color: #edf0f1;
+    line-height: 1.2;
+    margin-top: -100px;
+    text-align:center;
+    display: inline-block;
+    transform:translateY(40%);
+}
+
+
+
+/*Hyperlinks my teammates from the Hackathon (Tucker, Ben..)*/
+.teammates{
+    text-decoration: underline;
+    color:#b33434;
+    font-size: 22px;
+}
+.teammates:hover{
+    color: #c7c7c7;
+}
+
+
+
+/*The table describing the steps of the hackathon*/
+table{
+    display:inline-block;
+    width:500px;
+    border-spacing: 0px;
+    color:#edf0f1;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    transform:translate(-60%,50%);
+    font-size: 18px;
+}
+th{
+    text-align: left;
+}
+td{
+    text-align: left;
+}
+th, td{
+    padding: 10px;
+}
+table, th, td {
+    border: 1px solid #c7c7c7;
+    border-collapse:collapse;
+}
+tr:nth-child(odd){
+    background-color: #b33434;
+}
+tr:nth-child(even){
+    background-color: #2a2a2a;
+}
+.table_nav{
+    list-style: none;
+}
+
+
+
+/*The slide show*/
+.slidesSummary{
+    list-style: none;
+}
+.containerSlides{
+    display: inline-block;
+    height: 464px;
+    width:504px;
+    background: rgb(124, 103, 103);
+    border: 1px solid #fff;
+    overflow: hidden;
+    transform:translate(57%, -50%);
+}
+.navigator{
+    position:absolute;
+    display: flex;
+    transform:translate(110%, -140%)
+}
+.navigator .bar{
+    display: inline-block;
+    height: 9px;
+    width: 30px;
+    background: #b33434;
+    cursor: pointer;
+    border: 1px solid #000;
+    margin-left: 8px;
+    margin-bottom: 19px;
+}
+.navigator .bar:hover{
+    background: #c7c7c7;
+}
+input[type="radio"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    display: flex;
+    height: 100%;
+    width: 500%;
+}
+.image{
+    width: 20%;
+    transition: .2s ease;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#btn1:checked ~ .first{
+    margin-left: 0;
+}
+#btn2:checked ~ .first{
+    margin-left: -20%;
+}
+#btn3:checked ~ .first{
+    margin-left: -40%;
+}
+#btn4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+
+/*This is the social links*/
+.social__links{
+    list-style: none;
+    transform:translateY(130%)
+}
+
+.social__links li{
+    display: inline-block;
+    padding: 50px;
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-bottom: 10px;
+    
+    width: 148px;
+}
+
+.social__links li a{
+    transition: all 0.3s ease 0s;
+    
+}
+
+
+
+/*Back button*/
+.containerBackward{
+    display: inline-block;
+    width:120px;
+    height:50px;
+    background-color: #b33434;
+    border: 1px solid #edf0f1;
+    border-radius: 15px;
+}
+.containerBackward:hover{
+    background-color: #851b0d;
+}
+.backButtonText{
+    display: inline-block;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    margin-top:10px;
+
+}
+.backButtonText:hover{
+    color: #c7c7c7;
+}
+
+
+
+/*Forward button*/
+.containerForward{
+    display: inline-block;
+    width:120px;
+    height:50px;
+    background-color: #b33434;
+    margin-left:800px;
+    border-radius: 15px;
+    border: 1px solid #edf0f1;
+}
+.containerForward:hover{
+    border: 1px solid #c7c7c7;
+    background-color: #851b0d;
+}
+.forwardButtonText{
+    display: inline-block;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 18px;
+    color: #edf0f1;
+    margin-top:10px;
+   
+}
+.forwardButtonText:hover{
+    color: #c7c7c7;
+}
+
+
+
+/*Container to make the page longer*/
+.container{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+/*This happens when screen pixels get to 1200*/
+@media only screen and (max-width: 1230px) {
+
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /*Making the width of textbox smaller (along w/ some other changes)*/
+    .describingText{
+        transform:translateY(40%);
+        width:800px;
+        margin-bottom:-30px;
+    }
+
+    /*Changing where the table and slide-show are on the page*/
+    .tableTotal{
+        transform: translateX(60%);
+        display:inline-block;
+    }
+    .containerSlides{
+        transform:translateY(80%);
+    }
+
+
+
+    /*Changing where the GitHub and Email pictures are on the page*/
+    .social__links{
+        transform:translateY(210%);
+        list-style: none;
+    }
+    .social__links li{
+        display: inline-block;
+        padding: 45px;
+        margin-left: -24px;
+        margin-right: -24px;
+        margin-bottom: 10px;
+        margin-top:-50px;
+        width: 148px;
+    }
+
+
+    /*Closing the distance betwen the back and forward buttons*/
+    .containerForward{
+        transform:translate(-90%,860%)
+    }
+    .containerBackward{
+    
+        transform:translate(-250%,950%)
+    }
+
+
+    .container{
+        height:500px;
+    }
+
+ 
+}

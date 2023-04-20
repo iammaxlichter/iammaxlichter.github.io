@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap');  /*The google font im using*/
+
+
+
+/*This modifies every element*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+/*This modifies every list element with an "a" reference*/
+li, a{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/*modifies the background color*/
+body{
+    background: #2a2a2a;
+    margin: 1.5em 5em; /*I don't know what this does*/
+}
+
+
+
+/*This section is from "Max Lichter" all the way to the first navigation*/
+header{
+    display: center;
+    padding: 30px 10%;
+    margin-top: -35px;
+}
+.logo{
+    cursor: pointer;
+    font-size: 55px;
+    padding-bottom: 70px;
+}
+.logo:hover{
+    color: #b4b5b9;
+}
+
+
+
+/*The top navigation*/
+.nav__links{
+    list-style: none;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 38.4791px;
+}
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color: #b4b5b9;
+}
+
+
+
+/*The text "Fall 2022 Resume*/
+.ResumeTitle{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #edf0f1;
+    text-align: center;
+    letter-spacing: 2.5px;
+    margin-bottom: 2px;
+    margin-top: 60px;
+    display: inline-block;
+}
+
+
+
+/*The resume download button*/
+.ResumeDownloadButton{
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+
+
+/*The picture of my Resume*/
+.ResumePicture{
+    border: 2px solid #b4b5b9;
+    border-radius: 6px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+}
+
+/*This happens when the MAX screen width is 1225*/
+@media only screen and (max-width: 1225px) {
+
+    /*Changing the nav to be smaller*/
+    li, a{
+        font-family: 'M PLUS Code Latin', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #edf0f1;
+        text-decoration: none;
+        text-align: center;
+    }
+    .nav__links li{
+        margin-top: 20px;
+        display: inline-block;
+        padding: 20px;
+    }
+
+    /*Changing the resume picture to be smaller*/
+    .ResumePicture{
+        width:800px;
+    }
+
+}
+
+

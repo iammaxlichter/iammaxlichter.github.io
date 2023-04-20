@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap'); /*The google font im using*/
+
+/*So the page doesn't repeat the background*/
+html {
+    min-height: 100%
+}
+
+
+
+/*This modifies every element*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+
+
+/*This modifies every list element with an "a" reference*/
+li, a{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/*modifies the background color*/
+body{
+    background: #2a2a2a;
+    margin: 1.5em 5em;  /*I don't know what this does*/
+}
+    
+
+
+
+/*The home and projects buttons @ top left*/
+.home{
+    position:absolute;
+    display:flex;
+    margin-top:10px;
+    font-size:22px;
+    margin-left: 23px;
+}
+.home-container{
+    position:absolute;
+    display:flex;
+    background-color: #b33434;
+    border: 1px solid #c7c7c7;  
+    border-radius: 15px;
+    margin-left: -40px;
+    width:90px;
+    height:50px;
+    transform:translateY(25%);
+}
+.projects{
+    position:absolute;
+    display:flex;
+    margin-top:24px;
+    margin-left:90px;
+    color: white;
+    font-size:22px;
+}
+
+
+.home-container:hover{
+    background-color: #851b0d;
+}
+.home:hover{
+    color: #c7c7c7;
+}
+.projects:hover{
+    color: #c7c7c7;
+}
+
+
+
+
+
+/*This section is from the logo (Organizations)*/
+header{
+    
+    display: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    text-decoration-color: #edf0f1;
+    text-decoration-thickness: 4px;
+
+}
+.logo{
+    font-size: 60px;
+}
+
+
+
+/*This is the giant line*/
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #c7c7c7;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+
+
+
+/*This is the first row of content*/
+.Section1{
+    list-style: none;
+    display:inline-block;
+}
+
+.Section1 li a{
+    transition: all 0.3s ease 0s;
+}
+
+.Section1 li{
+    display:inline-block;
+    margin-top:-140px;
+    margin-bottom: 30px;
+}
+
+/*ACM Image*/
+.acmImage{
+    width:45%;
+    transform:translate(-65%,80%);
+    display:inline-block;
+}
+
+/*This is p1 of the describing text*/
+.describingText1{
+    -webkit-animation: introLoad 3s forwards;
+    animation: introLoad 3s forwards;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 550px;
+    height: 520px;
+    color: #edf0f1;
+    line-height: 1.2;
+    display:inline-block;
+    transform:translateX(55%);
+
+}
+
+
+
+
+/*This is the second row of content*/
+.Section2{
+    list-style: none;
+    display:inline-block;
+}
+.Section2 li a{
+    transition: all 0.3s ease 0s;
+}
+.Section2 li{
+    display:inline-block;
+    margin-top:40px;
+}
+
+/*CSG Image*/
+.csgImage{
+    width:70%;
+}
+
+/*This is p2 of the describing text DESPITE ITS NAME*/
+.describingText2{
+    -webkit-animation: introLoad 7s forwards;
+    animation: introLoad 7s forwards;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 550px;
+    height: 500px;
+    color: #edf0f1;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-bottom:80px;
+    margin-left: 20px;
+    display:inline-block;
+}
+
+
+
+
+/*This is the third row of content*/
+.Section3{
+    list-style: none;
+    display:inline-block;
+}
+.Section3 li a{
+    transition: all 0.3s ease 0s;
+}
+.Section3 li{
+    display:inline-block;
+}
+
+/*UX Club image*/
+.uiuxImage{
+    width:80%;
+    margin-left:70px;
+    transform:translateY(39%)
+}
+
+/*This is p3 of the describing text*/
+.describingText3{
+    -webkit-animation: introLoad 10s forwards;
+    animation: introLoad 10s forwards;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 550px;
+    height: 520px;
+    color: #edf0f1;
+    line-height: 1.2;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left:40px;
+}
+
+
+
+
+/*Back button*/
+.containerBackward{
+    display: inline-block;
+    width:120px;
+    height:50px;
+    background-color: #b33434;
+    border: 1px solid #edf0f1;
+    border-radius: 15px;
+    margin-right:700px;
+}
+.containerBackward:hover{
+    background-color: #851b0d;
+}
+.backButtonText{
+    display: inline-block;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+
+}
+.backButtonText:hover{
+    color: #c7c7c7;
+}
+
+
+
+/*Forward button*/
+.containerForward{
+    display: inline-block;
+    width:120px;
+    height:50px;
+    background-color: #b33434;
+    border-radius: 15px;
+    border: 1px solid #edf0f1;
+}
+.containerForward:hover{
+    border: 1px solid #c7c7c7;
+    background-color: #851b0d;
+}
+.forwardButtonText{
+    display: inline-block;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 18px;
+    color: #edf0f1;
+
+   
+}
+.forwardButtonText:hover{
+    color: #c7c7c7;
+}
+
+
+
+/*creates space for "more page"*/
+.container{
+    margin-bottom: 50px;
+}
+
+
+
+
+/*The loading animation for the describing text*/
+@-webkit-keyframes introLoad {
+    from {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/*The loading animation for the describing text*/
+@keyframes introLoad {
+    from {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
+
+
+
+
+/*EVERYTHING BELOW WAS ADJUSTING FOR RATIO*/
+
+@media only screen and (max-width: 1140px) {
+    .describingText3{
+        margin-bottom:-100px;;
+    }
+    .containerForward{
+        transform:translate(270%,-100%)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1352px) {
+
+    .describingText1{
+        transform:translate(0%);
+        width:600px;
+        margin-top:180px;
+        margin-bottom:-80px;
+    }
+    .acmImage{
+        margin-top:230px;
+        transform:translate(0%);
+    }
+
+    .describingText2{
+        transform:translate(0%, 40%);
+        width:600px;
+        margin-top:80px;
+        margin-bottom:-80px;
+    }
+    .csgImage{
+        margin-top:230px;
+        transform:translate(0%, -480%);
+        margin-bottom:-250px;
+    }
+
+    .describingText3{
+        transform:translate(0%);
+        width:600px;
+        margin-top:20px;
+    }
+    .uiuxImage{
+        margin-top:230px;
+        transform:translate(-5%, -30%);
+        margin-bottom:-100px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1631px) {
+
+
+    .acmImage{
+        transform:translate(0%,0%);
+    }
+    .describingText1{
+        transform:translate(-10%,0%);
+    }
+    .Section1 li{
+        margin-top: 120px;
+    }
+
+}
+
+
+@media only screen and (min-width: 2140px) {
+
+    .containerBackward{
+        opacity:0;
+    }
+
+    .containerForward{
+        opacity:0;
+    }
+
+
+
+    .describingText1{
+        transform:translate(5%, 0%);
+        margin-left:-70px;
+        margin-bottom:-100px;
+    }
+    .acmImage{
+        transform:translate(10%, 0%);
+        margin-right:-70px;
+    }
+
+
+    .describingText2{
+        transform:translate(20%, 0%);
+        margin-bottom: -100px;
+    }
+    .csgImage{
+        transform:translate(20%, -10%);
+
+
+    }
+
+    .describingText3{
+        transform:translate(100%, 0%);
+        margin-left: -20px;
+    }
+
+    .uiuxImage{
+        transform:translate(100%, 30%);
+    }
+}

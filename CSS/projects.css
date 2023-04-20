@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap'); /*The google font im using*/
+
+
+
+/*So the page doesn't repeat the background*/
+html {
+    min-height: 100%
+}
+
+
+
+/*This modifies every element*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+/*This modifies every list element with an "a" reference*/
+li, a{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/*modifies the background color*/
+body{
+    background: #2a2a2a;
+    margin: 1.5em 5em; /*I don't know what this does*/
+}
+
+
+
+/*This section is from "Max Lichter" all the way to the "Click the images..."*/
+header{
+    display: center;
+    padding: 30px 10%;
+    margin-top: -35px;
+}
+.logo{
+    cursor: pointer;
+    font-size: 55px;
+    padding-bottom: 100px;
+}
+.logo:hover{
+    color: #b4b5b9;
+}
+
+
+
+/*The top navigation*/
+.nav__links{
+    list-style: none;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 38.4791px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #b4b5b9;
+}
+
+
+
+/*The text "Click on the images below to see my projects & experience"*/
+.hero_title{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 31px;
+    color: #edf0f1;
+    text-align: center;
+    letter-spacing: 2.5px;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    display: inline-block;
+}
+
+
+
+/*The navigation for each box*/
+.experience__links{
+    list-style: none;
+}
+.experience__links li{
+    display: inline-block;
+    padding: 38.4791px;
+}
+.experience__links li a{
+    transition: all 0.3s ease 0s;
+}
+.experience__links li a:hover{
+    color: #b4b5b9;
+}
+
+
+
+/*How each and every box looks / with the overlay when you hover*/
+.Box {
+    position: relative;
+    width: 350px;
+}
+.image__img{
+    display: block;
+    width: 100%;
+ 
+}
+.image__overlay{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background:  rgba(0,0,0,0.6);
+    color: #e95c5c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .30s;
+}
+
+/*The blur when you hover*/
+.image__overlay--blur{
+    backdrop-filter: blur(5px);
+}
+
+/*Whenever you hover you can see the text*/
+.image__overlay:hover{
+    opacity: 1;
+}
+/*The top title and the lower caption*/
+.image__title{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.image__description{
+    margin-top:.25em;
+}
+
+
+
+/*This happens when the MAX screen width is 1225*/
+@media only screen and (max-width: 1225px) {
+    
+    /*Changing the nav to be smaller*/
+    li, a{
+        font-family: 'M PLUS Code Latin', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #edf0f1;
+        text-decoration: none;
+        text-align: center;
+    }
+    .nav__links li{
+        margin-top: 20px;
+        display: inline-block;
+        padding: 20px;
+    }
+
+
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html> 
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apollo</title> <!--title of the page-->
+        <link rel="stylesheet" href="ExperienceCSS/apollo.css"><!--the style sheet connected-->
+    </head>
+
+    <body>
+
+        <!--"Home" and "Projects" buttons on the top left-->
+        <div class = home-container>
+            <a href ="index.html" class="home">Home</a>
+        </div>
+            <a href ="projects.html" class="projects">Projects</a>
+    
+        <!--Title text of the page-->
+        <header><a class="logo">Apollo</a></header>
+            
+        <!--This giant section is the full description of what Apollo/Hackathons are-->
+        <p class = "describingText">Apollo, also known as Apollo Finance is a web application
+            developed in HTML, CSS, Python and JavaScript for HackUTD IX. HackUTD IX is part of a coding event known
+            as a hackathon. A hackathon is a 24-48 hour period in which well known companies give students a series of prompts to complete. These prompts 
+            are esstentially giant software development questions in which people participating in the hackathon (and their teams of 1-4 people) are to develop 
+            these software prompts however way possible. My group at HackUTD IX chose one of Capital One and Goldman Sachs' prompts which was, to summarize, "Create an risk analysis tool
+            to help people invest their money." After creating Apollo, we pitched it to employees of said companies (who acted as judges) in hopes they'd like our idea. 
+            
+            <br><br>
+            
+            My hackathon team and fellow co-creators of Apollo consisted of 
+            <!--Hyperlinking my teammates LinkedIn's to the page-->
+            <a href = "https://www.linkedin.com/in/tuckerstrow/" class = "teammates">Tucker Strow</a>,
+            <a href = "https://www.linkedin.com/in/benjamin-wowo/" class = "teammates">Ben Wowo</a>, and
+            <a href = "https://www.linkedin.com/in/vaidehi-patil-2003x4x13/" class = "teammates">Vaidehi Patil</a>.
+
+            Our platform, Apollo utilizes strong form efficiency to calculate beta values and expected returns of
+            a variety of stocks. Then, utilizing a survey, we discern an individual's risk preference and advise 
+            them accordingly, taking into account the volatility of a stock (beta value) against its expected return 
+            (using inflation as the risk-free rate and the S&P's average over the past 5 years as the market rate of 
+            return). On the front end, we provide the customer with clear and concise advice on which stocks would be
+            the best investments for them.
+            
+            <br><br> <!--every "<br> is a line break (creates a new line)"-->
+            
+            To put it in simplier terms, Apollo asks you a series of questions that determines how risky you want to invest,
+            then using built in python programming, we read the stock-market in real-time and give you our recommendations for 
+            stocks we believe you should invest in at that moment.
+            
+            <br><br><br>
+            
+            Although we didn't win HackUTD IX, it was certainly a fun time, and more than that, I learned how to hustle, work as a team,
+            and be proud of something I created in such a short amount of time. Below, there's a table listing what we did each hour 
+            of the 24-hour period. Along with that, to the right of the table is a couple of pictures from the event itself. 
+            
+            <br><br><br><br>
+            
+            Finally, below the table and the pictures, is the GitHub repository for our project along with my personal email. 
+            Contact me concerning questions about this project and or advice to improve it!
+        </p> 
+        
+        <!--The GitHub and Email links-->
+        <ul class = social__links>
+            <li><a href="https://github.com/iammaxlichter/Apollo-HackUTD-IX"><img src="Pictures/connect/github.svg" alt="github icon" /></a></li>
+            <li><a href="mailto:iammaxlichter@gmail.com"><img src="Pictures/connect/gmail.svg" alt="gmail icon" /></a></li>
+        </ul>
+
+        <!--This whole section is the table of information regarding the hackathon (surrounded it with a div)-->
+        <div class = "tableTotal">
+        <ul class = "table_nav">
+            <li>
+                <table>
+                    <!--The first and top row, every "<tr>" is a row-->
+                    <tr>
+                        <th>Hours</th>
+                        <th>Details</th>
+                    </tr>
+
+
+                    <tr>
+                        <!--every "<td>" inside a "<tr>" is a element inside the row-->
+                        <td>
+                            Hours 0-2
+                        </td>
+                        <td>
+                            We first checked into HackUTD and started visiting all the companies booths to see what
+                            they had to offer. After that we went to the opening ceremony and decided on which prompts we wanted
+                            to do.
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            Hours 3-8
+                        </td>
+                        <td>
+                            Second we brainstormed and started devloping an idea of the direciton we wanted to go.
+                            Aftwards, we started to design our webpages in Figma.
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            Hours 9-16
+                        </td>
+                        <td>
+                            Everyone sat down and starting coding. We split the work into sections and teams and
+                            grinded out the whole projects. Tucker and Ben did back-end, Vaidehi and I did front-end.
+                            In between we went to events and workshops that HackUTD was hosting. 
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            Hour 17-24
+                        </td>
+                        <td>
+                            Finished some minor details with the website and went to sleep.
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            Hours 25-26
+                        </td>
+                        <td>
+                            Presented Apollo in front of all the judges and went the closing ceremony.
+                        </td>
+                    </tr>
+
+
+                </table>
+            </li>
+        </ul>
+        </div>
+
+        <!--The whole slide-show-->
+        <ul  class = slidesSummary>
+            <li><div class = "containerSlides">
+                <div class ="slides">
+
+                    <!--I don't really know what this does, but assuming this allows you to switch btwn pictures as well-->
+                    <input type = "radio" name = "common" id="btn1" checked>
+                    <input type = "radio" name = "common" id="btn2">
+                    <input type = "radio" name = "common" id="btn3">
+                    <input type = "radio" name = "common" id="btn4">
+                    
+    
+                    <!--each image inside the slide-show-->
+                    <div class = "image first">
+                        <img src = "Pictures/apollo/apollo0.JPG">
+                    </div>
+
+                    <div class = "image">
+                        <img src = "Pictures/apollo/apollo1.png">
+                    </div>
+
+                    <div class = "image">
+                        <img src = "Pictures/apollo/apollo2.png">
+                    </div>
+
+                    <div class = "image">
+                        <img src = "Pictures/apollo/apollo3.png">
+                    </div>
+
+                </div>
+
+                <!--The navigator at the bottom of the slide-show that navigates you between pictures-->
+                <div class = "navigator">
+                    <label for="btn1" class="bar"></label>
+                    <label for="btn2" class="bar"></label>
+                    <label for="btn3" class="bar"></label>
+                    <label for="btn4" class="bar"></label>
+                </div>
+            </div></li>
+        </ul>
+
+        <!--Back button-->
+        <a href="projects.html">
+            <div class = "containerBackward"> 
+            <p class = "backButtonText"><----</p>
+            </div>
+        </a>
+
+        <!--Forward button-->
+        <a href="portfolio.html">
+        <div class = "containerForward">
+            <p class = "forwardButtonText">Portfolio</p>
+        </div>
+        </a>
+
+        <!--Container to create extra space-->
+        <p class = "container"></p>
+    
+    </body>

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap'); /*The google font im using*/
+
+/*So the page doesn't repeat the background*/
+html {
+    min-height: 100%
+}
+
+
+
+/*This modifies every element*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+       
+}
+
+
+
+/*This modifies every list element with an "a" reference*/
+li, a{
+    
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/*modifies the background color*/
+body{
+    background: #2a2a2a;
+    margin: 1.5em 5em; /*I don't know what this does*/
+}
+    
+
+
+/*The top navigation*/
+.nav__links{
+    list-style: none;
+    margin-left:21px;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 40px;
+}
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color: #b4b5b9;
+}
+
+.Welcome{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: #edf0f1; 
+    transform:translateY(300%);
+}
+
+/*The "Max Lichter"*/
+.logo{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: #edf0f1;
+}
+
+
+
+/*The "Computer Scientist..."*/
+.subLogo{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #edf0f1;
+    margin-bottom: 10px;
+}
+
+
+
+/*The "CS Undergrad at..."*/
+.subsubLogo{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #edf0f1;
+}
+
+
+
+/*implementing the animations*/
+.WelcomeAnimation{
+    animation: slideAnimationCode 1s ease-in;
+    animation: IntroDisappear .8s ease-out 1s forwards;
+}
+.slideAnimation{
+    margin-top: -100px;
+    animation: slideAnimationCode 1.5s ease-in;
+}
+
+
+
+/*This animation slides in my other text (other than my Welcome text*/
+@keyframes slideAnimationCode{
+    0%{
+        transform: translateY(600%);
+    }
+}
+
+
+
+/*This animation makes the "Welcome to my website" text go away*/
+@keyframes IntroDisappear{
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+/*When the screen gets to 1215 pixels, these changes occur*/
+@media only screen and (max-width: 1215px) {
+
+    /*Changing the nav to be smaller*/
+    li, a{
+        font-family: 'M PLUS Code Latin', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #edf0f1;
+        text-decoration: none;
+        text-align: center;
+        
+    }
+    .nav__links li{
+        display: inline-block;
+        padding: 30px;
+        
+    }
+
+
+
+    /*Changing all the words on the page to be smaller*/
+    .logo{
+        font-size:60px;
+    
+    }
+    .subLogo{
+        font-size:25px;
+    }
+    .subsubLogo{
+        font-size:15px;
+    }
+
+}
+
+@media only screen and (min-height: 940px) {
+    .logo{
+        margin-top:300px
+    }
+}

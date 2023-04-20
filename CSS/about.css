@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap'); /*The google font im using*/
+
+/*So the page doesn't repeat the background*/
+html {
+    min-height: 100%
+}
+
+
+
+/*This modifies every element*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+       
+}
+
+
+
+/*This modifies every list element with an "a" reference*/
+li, a{
+    
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/*modifies the background color*/
+body{
+    background: #2a2a2a;
+    margin: 1.5em 5em; /*I don't know what this does*/
+}
+    
+
+
+/*This section is from "Max Lichter" all the way to the first navigation*/
+header{
+    display: center;
+    padding: 30px 10%;
+    margin-top: -35px;
+    margin-left:-21px
+    
+}
+.logo{
+    margin-left:21px;
+    cursor: pointer;
+    font-size: 55px;
+    padding-bottom: 100px;
+}
+.logo:hover{
+    color: #b4b5b9;
+}
+
+
+
+/*The top navigation*/
+.nav__links{
+    list-style: none;
+    margin-left:21px;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 40px;
+}
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color: #b4b5b9;
+}
+
+
+
+
+/*The "Get to know me!*/
+.hero_title{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    letter-spacing: 2.5px;
+    margin-top: 60px;
+    color: #edf0f1;
+    display:inline-block;
+}
+
+
+
+/*The slide show*/
+.slide-show{
+    width: 504px;
+    height: 378px;
+    background-size:100% 100%;
+    display: inline-block;
+    animation: slider 9s infinite;
+    transform: translateY(-20%);
+    border: 1px solid rgb(68, 68, 68);
+    box-shadow: 2px 2px 7px 7px #b33434;
+}
+@keyframes slider{ /*These are the images in the slideshow*/
+    0%{ background-image: url('https://images.pexels.com/photos/15491351/pexels-photo-15491351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')}
+    35%{ background-image: url('https://images.pexels.com/photos/15516923/pexels-photo-15516923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')}
+    75%{ background-image: url('https://images.pexels.com/photos/15516941/pexels-photo-15516941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')}
+    100%{background-image: url('https://images.pexels.com/photos/15491351/pexels-photo-15491351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')} 
+}
+
+
+
+/*The describing text (about me)*/
+.info{
+    display:inline-block;
+    -webkit-animation: introLoad 3s forwards;
+    animation: introLoad 3s forwards;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 500px;
+    height: 500px;
+    color: #edf0f1;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-left:40px;
+    margin-bottom:80px;
+}
+
+
+
+/*Caption underneath the picture slideshow*/
+.caption{
+    display:inline-block;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 14px;
+    width: 510px;
+    height: 50px;
+    color: #edf0f1;
+    line-height: 1.2;
+    text-align: center;
+    transform: translate(-53%, -320%);
+
+
+}
+
+
+/*The loading animation for the describing text*/
+@-webkit-keyframes introLoad {
+    from {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/*The loading animation for the describing text*/
+@keyframes introLoad {
+    from {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
+/*When the screen gets to 1230 pixels, these changes occur*/
+@media only screen and (max-width: 1230px) {
+
+    /*Changing the nav to be smaller*/
+    li, a{
+        font-family: 'M PLUS Code Latin', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #edf0f1;
+        text-decoration: none;
+        text-align: center;
+    }
+    .nav__links li{
+        margin-top: 20px;
+        display: inline-block;
+        padding: 20px;
+    }
+
+    
+    /*Moving the caption down*/
+    .caption{
+        transform:translate(0%,-1080%)
+    }
+
+    /*Making the describing text's width smaller*/
+    .info{
+        width:800px;
+        margin-bottom:-70px;
+    }
+}
+
+/*When the screen gets to MINIMUM 1735 pixels, these changes occur*/
+@media only screen and (min-width: 1722px) {
+    .info{
+        transform:translateX(50%);
+    }
+    .slide-show{
+        transform:translate(50%,-10%);
+    }
+    .caption{
+        transform:translate(-159%,90%)
+    }
+}
+
