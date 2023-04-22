@@ -27,6 +27,7 @@ li, a{
     color: #edf0f1;
     text-decoration: none;
     text-align: center;
+    margin-bottom: -100px;
 }
 
 
@@ -65,7 +66,6 @@ body{
 
 /*The "Max Lichter"*/
 .logo{
-    margin-top:100px;
     font-family: 'M PLUS Code Latin', sans-serif;
     font-size: 100px;
     font-weight: bold;
@@ -97,26 +97,26 @@ body{
 
 /*implementing the animations*/
 .WelcomeAnimation{
-    animation: slideAnimationCode 1s ease-in;
     animation: IntroDisappear .8s ease-out 1s forwards;
 }
-.slideAnimation{
-    margin-top: -100px;
-    animation: slideAnimationCode 1.5s ease-in;
+
+.FadeInNavBar{
+    opacity: 0;
+    animation: IntroAppear 2.0s ease-out 2s forwards;
+}
+
+.FadeInHeader{
+    opacity: 0;
+    animation: IntroAppear 2.0s ease-out 2s forwards;
+}
+
+.FadeInSubHeader{
+    opacity: 0;
+    animation: IntroAppear 2.0s ease-out 4s forwards;
 }
 
 
 
-/*This animation slides in my other text (other than my Welcome text*/
-@keyframes slideAnimationCode{
-    0%{
-        transform: translateY(600%);
-    }
-}
-
-
-
-/*This animation makes the "Welcome to my website" text go away*/
 @keyframes IntroDisappear{
     100%{
         opacity: 0;
@@ -124,17 +124,23 @@ body{
 }
 
 
+@keyframes IntroAppear{
+    100%{
+        opacity: 1;
+    }
+}
 
-/*When the screen gets to 1255 pixels, these changes occur*/
 
-@media only screen and (min-width: 1259px) {
-    .logo{
-        margin-top: 200px;
+
+
+@media only screen and (min-width: 1260px) {
+    .TextSection{
+        transform:translateY(70%)
     }
 }
 
 /*When the screen gets to 1215 pixels, these changes occur*/
-@media only screen and (max-width: 1215px) {
+@media only screen and (max-width: 1260px) {
 
     /*Changing the nav to be smaller*/
     li, a{
@@ -156,10 +162,14 @@ body{
 
 
     /*Changing all the words on the page to be smaller*/
+    .TextSection{
+        transform:translateY(-70%);
+    }
     .Welcome{
         font-size:60px
     }
     .logo{
+        margin-top: 100px;
         font-size:60px;
     
     }
@@ -174,6 +184,6 @@ body{
 
 @media only screen and (min-height: 940px) {
     .logo{
-        margin-top:300px
+        margin-top:100px
     }
 }
