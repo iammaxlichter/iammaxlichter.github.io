@@ -100,16 +100,37 @@ body{
     animation: IntroDisappear .8s ease-out 1s forwards;
 }
 
-.FadeInNavBar{
-    opacity: 0;
-    animation: IntroAppear 2.0s ease-out 2s forwards;
+
+
+/*Navbar delay animations*/
+.IronManHome{
+    opacity:0;
+    animation: IntroAppear 2.0s ease-out 3s forwards;
+}
+.IronManAbout{
+    opacity:0;
+    animation: IntroAppear 2.0s ease-out 3.3s forwards;
+}
+.IronManProjects{
+    opacity:0;
+    animation: IntroAppear 2.0s ease-out 3.6s forwards;
+}
+.IronManResume{
+    opacity:0;
+    animation: IntroAppear 2.0s ease-out 3.9s forwards;
+}
+.IronManConnect{
+    opacity:0;
+    animation: IntroAppear 2.0s ease-out 4.2s forwards;
 }
 
+
+
+/*Fade in headers*/
 .FadeInHeader{
     opacity: 0;
     animation: IntroAppear 2.0s ease-out 2s forwards;
 }
-
 .FadeInSubHeader{
     opacity: 0;
     animation: IntroAppear 2.0s ease-out 4s forwards;
@@ -117,19 +138,17 @@ body{
 
 
 
+/*These animations appear and disappear the text*/
 @keyframes IntroDisappear{
     100%{
         opacity: 0;
     }
 }
-
-
 @keyframes IntroAppear{
     100%{
         opacity: 1;
     }
 }
-
 
 
 
