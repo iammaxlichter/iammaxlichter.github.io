@@ -249,6 +249,7 @@ hr {
     font-weight: 500;
     font-size: 20px;
     color: #edf0f1;
+    margin-top:10px;
 
 }
 .backButtonText:hover{
@@ -274,6 +275,7 @@ hr {
     display: inline-block;
     font-family: 'M PLUS Code Latin', sans-serif;
     font-size: 18px;
+    margin-top:10px;
     color: #edf0f1;
 
    
