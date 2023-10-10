@@ -1,38 +1,103 @@
-<!DOCTYPE html> 
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Signet Jewelers</title> <!--title of the page-->
-        <link rel="stylesheet" href="ExperienceCSS/signet.css"><!--the style sheet connected-->
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signet Jewelers</title> <!--title of the page-->
+    <link rel="stylesheet" href="ExperienceCSS/signet.css"><!--the style sheet connected-->
+</head>
 
-        <!--"Home" and "Projects" buttons on the top left-->
-    <div class = home-container>
-        <a href ="index.html" class="home">Home</a>
+<body>
+
+    <!--"Home" and "Projects" buttons on the top left-->
+    <div class=home-container>
+        <a href="index.html" class="home">Home</a>
     </div>
-        <a href ="projects.html" class="projects">Projects</a>
+    <a href="projects.html" class="projects">Projects</a>
 
-        <!--Title text of the page-->
-        <header><a class="logo">Signet Jewelers</a></header>
-        
-        <!--Back button-->
-        <a href="projects.html">
-            <div class = "containerBackward"> 
-            <p class = "backButtonText"><----</p>
+    <!--Title text of the page-->
+    <header><a class="logo">Signet Jewelers</a></header>
+
+    <ul class="sectionTop">
+        <li>
+            <p>Signet Jewelers is the world's largest reatiler of diamond jewelry, acting under the brands
+                of Kay Jewelers, Zales, Jared, James Allen, and so many more. During the Summer of 2023 I had the 
+                marvelous opporutnity to take an internship under this luxurious brand. Over 12 weeks, I worked as
+                a quality engineer under the supervision of Sam Ibrahim. My time at Signet was memorable, as the 
+                people I met and worked with have been some of the most influential figures i've ever had in my life 
+            </p>
+        </li>
+    </ul>
+    <!--The whole slide-show-->
+    <ul class=slidesSummary>
+        <li>
+            <div class="containerSlides">
+                <div class="slides">
+
+                    <!--I don't really know what this does, but assuming this allows you to switch btwn pictures as well-->
+                    <input type="radio" name="common" id="btn1" checked>
+                    <input type="radio" name="common" id="btn2">
+                    <input type="radio" name="common" id="btn3">
+
+                    <!--each image inside the slide-show-->
+                    <div class="image first">
+                        <img src="Pictures/signet/signetPhoto1.JPG">
+                    </div>
+                    <div class="image">
+                        <img src="Pictures/signet/signetPhoto2.jpg">
+                    </div>
+                    <div class="image">
+                        <img src="Pictures/signet/signetPhoto3.jpg">
+                    </div>
+                </div>
+
+                <!--The navigator at the bottom of the slide-show that navigates you between pictures-->
+                <div class="navigator">
+                    <label for="btn1" class="bar"></label>
+                    <label for="btn2" class="bar"></label>
+                    <label for="btn3" class="bar"></label>
+                </div>
             </div>
-        </a>
+        </li>
+    </ul>
+    <!--Bottom description of signet-->
+    <ul class="sectionBottom">
+        <li>
+            <p>At Signet, I worked inside the corporate office in Coppell, Texas. Some of the most notable
+                achievments from my internship include... mastering agile methodology through Atlassian Jira by manually
+                and automatically testing hundreds and hundreds of user story test cases for over 8 separate working
+                E-commerce websites, developing an incredibly deep understand of a test case and its whole life cycle, and 
+                mastering my comprehension on how an E-Commerce business runs and functions. There is plenty of information
+                I'm forgetting, but those were a few prominent takeaways from my internship.
 
-        <!--Forward button-->
-        <a href="myMuse.html">
-        <div class = "containerForward">
-            <p class = "forwardButtonText">MyMuse</p>
+                <br><br>
+
+                From the beginning of my 12 week internship at Signet Jewelers to the end, I learned an crazy volume of information 
+                regarding quality assurance/engineering, the software development life cycle, working efficiently through sprints with a giant, 
+                extremely intelligent team, and so so so much more. Above, are some photos I took during my time at Signet. Although 
+                I don't have too many photos, the memories and information learned at this company will always stick with me
+            </p>
+        </li>
+    </ul>
+
+
+
+    <!--Back button-->
+    <a href="projects.html">
+        <div class="containerBackward">
+            <p class="backButtonText"><---- </p>
         </div>
-        </a>
+    </a>
 
-         <!--Container to create extra space-->
-        <p class = "container"></p>
-    </body>
+    <!--Forward button-->
+    <a href="myMuse.html">
+        <div class="containerForward">
+            <p class="forwardButtonText">MyMuse</p>
+        </div>
+    </a>
+
+    <!--Container to create extra space-->
+    <p class="container"></p>
+</body>

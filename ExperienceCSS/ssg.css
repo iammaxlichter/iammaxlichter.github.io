@@ -13,7 +13,6 @@ html {
     margin: 0;
     padding: 0;
     text-align: center;
-    
 }
 
 
@@ -28,7 +27,9 @@ li, a{
     text-align: center;
 }
 
-
+ul {
+    list-style-type: none;
+}
 
 /*modifies the background color*/
 body{
@@ -93,7 +94,7 @@ header{
 
 }
 .logo{
-    font-size: 60px;
+    font-size: 50px;
 }
 
 
@@ -108,10 +109,25 @@ hr {
     padding: 0;
 }
 
+.sectionTop{
+    margin-top:80px;
+    margin-bottom:40px;
+}
+
+/*The picture onscreen bouncing*/
+.ssgImage{
+    width: 65%; 
+    border: 1px solid #b4b5b9;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
 
 
-
-
+.sectionBottom{
+    margin-top:30px;
+    margin-bottom:90px;
+}
 
 
 /*Back button*/
@@ -139,7 +155,6 @@ hr {
 .backButtonText:hover{
     color: #c7c7c7;
 }
-
 
 
 /*Forward button*/

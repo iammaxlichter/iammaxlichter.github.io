@@ -28,6 +28,9 @@ li, a{
     text-align: center;
 }
 
+ul {
+    list-style-type: none;
+}
 
 
 /*modifies the background color*/
@@ -110,8 +113,89 @@ hr {
 
 
 
+/*SLIDE SHOW and describing text*/
+.slidesSummary{
+    list-style: none;
+}
+.slidesSummary li{
+    display: inline-block;
+    padding: 38.4791px;
+}
+.slidesSummary li a{
+    transition: all 0.3s ease 0s;
+}
+.slidesSummary li a:hover{
+    color: #b4b5b9;
+}
 
 
+
+/*slides*/
+.containerSlides{
+    display: inline-block;
+    height: 584px;
+    width:334px;
+    background: rgb(124, 103, 103);
+    border: 1px solid #fff;
+    overflow: hidden;
+    transform:translateY(0%); 
+}
+.navigator{
+    position:absolute;
+    display: flex;
+    transform:translate(79%, -140%);
+}
+.navigator .bar{
+    display: inline-block;
+    height: 9px;
+    width: 30px;
+    background: #b33434;
+    cursor: pointer;
+    border: 1px solid #000;
+    margin-left: 5px;
+    transform:translate(100%, -30%);
+}
+.navigator .bar:hover{
+    background: #c7c7c7;
+}
+input[type="radio"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    display: flex;
+    height: 100%;
+    width: 500%;
+}
+.image{
+    width: 20%;
+    transition: .2s ease;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#btn1:checked ~ .first{
+    margin-left: 0;
+}
+#btn2:checked ~ .first{
+    margin-left: -20%;
+}
+#btn3:checked ~ .first{
+    margin-left: -40%;
+}
+
+
+/*All of the words on the page*/
+.sectionTop{
+    margin-top:70px;
+    margin-bottom:30px;
+}
+
+.sectionBottom{
+    margin-top:30px;
+    margin-bottom:70px;
+}
 
 
 /*Back button*/
