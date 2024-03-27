@@ -1,11 +1,7 @@
 # [Portfolio Website](https://iammaxlichter.github.io)
-This project was started Summer of 2022 and showcases all of the work, experience, and projects that I have done in my CS career.
+First launched in the summer of 2022, Portfolio Website Version 1 is a comprehensive digital repository that painstakingly documents the range of my pursuits, encounters, and undertakings during the course of my computer science career. This project, which was constructed using the fundamental web technologies of HTML and CSS, not only demonstrates my present technological proficiency but also takes future growth into consideration.
 <br><br>
-I've always been passionate about web development, and while searching for a Summer job in my hometown, I decided it was time for me to put my money where my mouth was, and start learning. I developed this project in HTML, CSS, and JavaScript and will continue to add to it / modify it as my CS career and knowledge on these specific languages continues to grow.
-<br><br>
-Not only does this website showcase my skills in web development, but it is also a very handy tool I can show employers for jobs I'm applying to.
-<br><br>
-Below is what some of the pages on my portfolio website look like (or click the hyperlink at the very top of this readme to go to the actual website).
+The portfolio is made to be easily updated and improved upon as my competence in these important languages increases. It serves as a dynamic record of my career development, changing to mirror my ongoing advancement in the rapidly changing field of computer science and highlighting the broader reach of my accomplishments.
 <br><br>
 
 ![projects](https://user-images.githubusercontent.com/107379037/220225558-c19c50ea-05e7-4fca-9a7d-2dee6f1826ca.PNG)
